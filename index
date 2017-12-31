@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<title>Home Page</title>
+<!--<link rel="icon" href="https://www.planetofthevapes.co.uk/forums/data/avatars/l/26/x26045.jpg,q1494283249.pagespeed.ic.kqfUXONPAi.png">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+ body,html{
+	background-image:url("https://images.pexels.com/photos/265186/pexels-photo-265186.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	height:100%;
+	background-position:center;
+	background-attachment:fixed;
+	background-size:cover;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ }
+ 
+ p{
+	padding:15px;
+ }
+ 
+ 
+ 
+</style>
+
+</head>
+
+<body>
+ 
+<h1 style="text-align:center; font-size:42pt;"> Welcome </h1>
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li class="active"> <a href="index.html">Home Page</a> </li>
+			<li> <a href="about.html">About</a> </li>
+			<li> <a href="contact.html">Contact</a> </li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container" style="font-size:16pt;">
+<p class="text-center"> “What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though.”<br> 
+― J.D. Salinger, The Catcher in the Rye</p>
+
+<p class="text-center">“I think... if it is true that <br>
+						there are as many minds as there <br>
+						are heads, then there are as many <br>
+						kinds of love as there are hearts.” <br>
+						― Leo Tolstoy, Anna Karenina </p>
+						
+<p class="text-center">“Out beyond ideas of wrongdoing <br>
+						and rightdoing there is a field.<br>
+						I'll meet you there.<br>
+						When the soul lies down in that grass <br>
+						the world is too full to talk about.” <br>
+						― Jalaluddin Mevlana Rumi
+ </p>						
+</div>
+
+
+
+
+
+</body>
+
+</html>
