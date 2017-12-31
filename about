@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<title>About me</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+ body{
+	background-image:url("https://images.pexels.com/photos/265186/pexels-photo-265186.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	height:100%;
+	background-position:center;
+	background-attachment:fixed;
+	background-size:cover;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ }
+ 
+ p{
+	padding-top:15px;
+ }
+</style>
+
+</head>
+
+<body>
+
+<h1 style="text-align:center; font-size:42pt;"> Welcome </h1>
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li> <a href="index.html">Home Page</a> </li>
+			<li class="active"> <a href="about.html">About</a> </li>
+			<li> <a href="contact.html">Contact</a> </li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="container" style="font-size:16pt;">
+<p class="text-center"> Hello!<br> My name is Edina Mehmedovic. <br> I'm from Budva and I'm 22 years old. </p>
+
+</div>
+
+</body>
+
+</html>
