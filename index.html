@@ -1,3 +1,4 @@
+
 <html>
 <head>
 
@@ -12,11 +13,26 @@
 	background-attachment:fixed;
 	background-size:cover;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-top:30px;
+ }
+ 
+ .divs{
+	margin-bottom:20px;
+	background-color:rgba(250, 250, 210,0.6);
+	min-height:500px;
+	padding:35px;
+  display: table;
+ }
+ 
+ .tekst{
+ display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+	
  }
  
  p{
 	padding:15px;
-	 background-color:rgba(250, 250, 210,0.6);
  }
  
  
@@ -26,20 +42,26 @@
 </head>
 
 <body>
- 
-<h1 style="text-align:center; font-size:42pt;"> Welcome </h1>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<ul class="nav navbar-nav">
-			<li class="active"> <a href="index.html">Home Page</a> </li>
-			<li> <a href="about.html">About</a> </li>
-			<li> <a href="contact.html">Contact</a> </li>
+			<li class="active"> <a href="#">Home Page</a> </li>
+			<li> <a href="#Skills">Skills</a></li>
+			<li> <a href="#About">About</a> </li>
+			<li> <a href="#Contact">Contact</a> </li>
 		</ul>
 	</div>
 </nav>
 
-<div class="container" style="font-size:14pt;">
+
+<div class="container">
+<div class="container">
+<h1 style="text-align:center; font-size:42pt;"> Welcome </h1>
+</div>
+
+<div id="Home" class="container divs" style="font-size:14pt">
+	<div class="tekst">
 <p class="text-center"> “What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though.”<br> 
 ― J.D. Salinger, The Catcher in the Rye</p>
 
@@ -55,9 +77,32 @@
 						When the soul lies down in that grass <br>
 						the world is too full to talk about.” <br>
 						― Jalaluddin Mevlana Rumi
- </p>						
+ </p>	
+	</div>
 </div>
 
+<div id="Skills" class="container divs" style="font-size:14pt;">
+	<div class="tekst">
+<p class="text-center"> Skills: </p>
+	</div>
+</div>
+
+<div id="About" class="container divs" style="font-size:14pt;">
+	<div class="tekst">
+<p class="text-center"> Hello!<br> My name is Edina Mehmedovic. <br> I'm from Budva and I'm 22 years old. </p>
+	</div>
+</div>
+
+
+<div id="Contact" class="container divs" style="font-size:14pt;">
+	<div class="tekst">
+<p class="text-center"> Facebook: <a href="https://www.facebook.com/edinna.mehmedovic">Edina Mehmedovic </a> </p>
+<p class="text-center"> E-mail: didda.bu295@gmail.com </p>
+	</div>
+</div>
+
+
+</div>
 
 
 
