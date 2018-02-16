@@ -52,16 +52,27 @@
 
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
-		<ul class="nav navbar-nav">
-			<li class="active"> <a href="#">Home Page</a> </li>
-			<li> <a href="#Skills">Skills</a></li>
-			<li> <a href="#About">About</a> </li>
-			<li> <a href="#Contact">Contact</a> </li>
-		</ul>
-	</div>
-</nav>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+    			<li class="active"> <a href="#">Home Page</a> </li>
+    			<li> <a class="slajder" href="#Skills">Skills</a></li>
+    			<li> <a class="slajder" href="#About">About</a> </li>
+    			<li> <a class="slajder" href="#Contact">Contact</a> </li>
+    		</ul>
+      </div>
+
+  	</div>
+  </nav>
 
 
 <div id="Home" class="container divs" style="font-size:14pt">
@@ -220,7 +231,21 @@
 	</div>
 </div>
 
-
+<script>
+$(document).ready(function(){
+  $('.slajder').click(function(e){
+    // hvata atribute
+    var linkHref = $(this).attr('href');
+    // console.log($(linkHref).offset().top);
+    //skroluj do pozicije na stranici
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    }, 1000);
+    // sprecava da se gore u nav baru pokaze #pa stranica
+    e.preventDefault();
+  });
+});
+</script>
 </body>
 
 </html>
