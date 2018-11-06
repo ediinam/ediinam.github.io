@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background-color: #e3d1ba; */
+  background-image: url("img/bgr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+body{
+  max-height:100%;
+}
+
+/* centriram u odnosu na stranicu */
+.gal_div{
+  position: relative;
+  top:10%;
+  margin:0 auto;
+  width:90%;
+  height: 70%;
+  /* white-space: nowrap; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Odvajam slajdove */
+.gal_div div {
+  /* display:none; */
+  position: relative;
+  white-space: nowrap;
+  margin:0 auto;
+  width:auto;
+  height:100%;
+}
+.gal_el img{
+  image-orientation: from-image; /* Da mi se slika ne rotira */
+  position: relative;
+  padding: 0 3% 0 3%;
+  vertical-align: middle;
+  width:auto;
+  max-height: 100%;
+  /* white-space: nowrap; */
+}
+
+#s3 img,#s5 img,#s7 img ,#s9 img{
+  padding:0 10%;
+}
+
+audio{
+  display: none;
+}
+
+/* SCROLLBAR */
+/* width */
+/* .gal_div::-moz-scrollbar {
+   heigth: 5px;
+}
+
+/* Track */
+/* .gal_div::-moz-scrollbar-track {
+   background: #black;
+}
+
+/* Handle */
+/* .gal_div::-moz-scrollbar-thumb {
+   background: black;
+}
+
+/* Handle on hover */
+/* .gal_div::-moz-scrollbar-thumb:hover {
+   background: #555;
+} */
+/*
+.gal_div::-moz-scrollbar {background-color: black;}
+.gal_div::-moz-scrollbartrack-horizontal {background-color: yellow;} */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -32px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
