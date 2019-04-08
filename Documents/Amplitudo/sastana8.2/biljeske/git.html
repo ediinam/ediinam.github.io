@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Git biljeske</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        .glavno>li {
+            margin-bottom: 15px;
+        }
+        
+        em {
+            color: yellow;
+            font-style: italic;
+        }
+        
+        ol,
+        ul {
+            font-size: 18pt;
+        }
+        
+        li {
+            font-size: 12pt;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>Introduction
+        <li>Repository is usually used to ogranize a single project.Repositories can contain folders and iles,images,videos ect.Recommended use od README with information about project.</li>
+        <li>Branching is a way to work on different versions of a repository at one time. By default we have <em>master</em> wich is considered to be the definitive branch. We use other branches to make edits before committing them to master. When we create
+            a branch off the master, we make a copy of the master branch</li>
+        <li>Saved branches are called <em>commits</em>, each commit has an associated <em>commit message</em>, a description of changes made.</li>
+        <li>When you open a <em>pull</em> request, you're proposing changes and requesting that someone review and pull your contribution and megre them into their branch. Pull requests show <em>diffs</em> of differences from both branches which are shown
+            in green and red.</li>
+        <li>After pull request comes <em>merge</em> where you merge edits from side branch to master branch.</li>
+    </ol>
+
+    <ul class="glavno">Git commands
+        <li><em>git init</em> - creates a new repository</li>
+
+        <li>
+            <ul>
+                <li><em>git clone path/to/repository</em> - create a working copy of a local repository</li>
+                <li><em>git clone username@host:/path/to/repository</em> - create a copy from remove server</li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><em>git add filename</em> - propose changes and than <em>git commit -m "Commit message"</em> - now the file is commited to head but not in remote repository</li>
+                <li><em>git add *</em> - propose changes and than <em>git commit -m "Commit message"</em> - now the file is commited to head but not in remote repository</li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><em>git push origin master</em> - promjene saljemo sa grane u kojoj smo na master granu na lokalni repo</li>
+                <li><em>git push -u origin master</em> - saljemo master granu na remote</li>
+                <li><em>git push origin branchname</em> - saljemo svoju granu na remote repo</li>
+                <li><em>git push --all origin</em> - sve grane pushamo na remote</li>
+                <li><em>git push origin :branchname</em> - brise granu sa remote</li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><em>git branch ime_grane</em> - pravimo branch</li>
+                <li><em>git branch</em> - listamo sve grane</li>
+                <li><em>git branch -d branchname</em> - brise granu</li>
+            </ul>
+        </li>
+        <li><em>git checkout ime_grane</em> - prebacujemo se na granu</li>
+
+        <li><em>git merge ime_grane</em> - prebacimo izmijenjene fajlove sa ime_grane na onu u kojoj se nalazimo</li>
+        <li>
+            <em>git pull origin remote</em> - da bi sa remote prebacili na local
+            <em>git pull</em> - preuzima sve promjene sa remote
+        </li>
+
+        <li>
+            <ul>
+                <li> <em>git remote add origin server</em> - ako nismo povezali projekat, povezemo ga sa remote repo kako bi pushali</li>
+                <li><em>git remote -v</em> - prikazuje sve remote repo</li>
+            </ul>
+        </li>
+
+        <li><em>git diff</em> - prikazuje konflikte</li>
+
+        <li><em>git status</em> - prikazuje izmijenjene fajlove koji nisu commitovani</li>
+
+        <li><em>git log</em> - prikazuje sve izmjene</li>
+    </ul>
+
+    <ol>Koraci za pravljenje projekta
+        <li>Napravimo folder u kojem zelimo da bude projekat</li>
+        <li>U tom folderu otvorimo git terminal</li>
+        <li><em>git init</em></li>
+        <li>U folderu napravimo fajl
+            <ul>
+                <li><em>git add .</em></li>
+                <li><em>git commit -m "Commit message"</em></li>
+            </ul>
+        </li>
+        <li>Koristimo <em>git status</em> da bi vidjeli koje su promjene napravljene</li>
+        <li>Ako smo nesto izmijenili,
+            <ul>
+                <li><em>git add "ime fajla"</em></li>
+                <li><em>git commit -m "poruka"</em></li>
+            </ul>
+        </li>
+        <li>Kad kreiramo granu, prebacimo se u nju, dodajemo joj fajlove sa <em>git add</em> i <em>git commit</em></li>
+        <li>Pravimo izmjene na fajlovima na sporednoj grani</li>
+        <li>Prebacimo se na glavnu granu i tu kucamo <em>git merge ime_sporedne_grane</em> kako bi spojili promjene</li>
+        <li>Da bi prebacili projekat na remote repository odemo na GitHub profil i samo kreiramo repository</li>
+        <li>Uzmemo link repository-ja</li>
+        <li><em>git remote add origin url</em> postavljamo origin remote</li>
+        <li>Da bi pushali kod na remote radimo <em>git push -u origin master</em> sa glavne grane na remote repo</li>
+        <li></li>
+
+    </ol>
+
+</body>
+
+</html>

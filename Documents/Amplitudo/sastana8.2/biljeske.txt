@@ -1,0 +1,62 @@
+#### Terminal
+whoami- username
+pwd - print working directory
+cat- prikazuje sadrzaj fajla
+grep "nesto" ime_fajla.txt- pretraga u fajlu
+ps aux - svi aktivni procesi na racunaru
+kill id - ukinuti proces preko ID-ja (pkill ime - preko imena)
+tail- iskucava kraj fajla (mozemo birati koliko linija)
+| - pipe -spaja
+curl link > ime_fajla - skida fajl pod imenom ime_fajla
+ls -lista fajlove i foldere u datom folderu
+
+#### Git
+scm
+git init -inicijalizuje repozitorijum, pravi u folderu .git (ls -al - prikaz)
+touch ime_fajla - kreira fajl
+####
+git init zadatak
+cd zadatak
+mkdir models
+mkdir views
+mkdir app
+ls
+git status
+touch index.php
+git add . (sve)
+git commit -m "initial commit"
+git checkout -b hot_fix
+touch fix.php
+git add .
+git commit -m "cao"
+git checkout master
+git merge hot_fix
+git diff hot_fix (razlika izmedju trenutne i date)
+git branch -d "ime_grane" - brise granu
+git branch - izlista grane
+git remote add origin url
+git pull -povuce sve izmjene
+(putty)
+git log - izlistava commit
+
+### REST
+
+Products
+GET -> /products //izlistava bazu
+GET -> /products/:id //sa id
+GET -> /products/:id/edit //prikazuje formu za editovanje
+POST -> /products/:id //kreira u bazi
+PUT -> /product/:id //mijenja u bazi
+DELETE -> /product/:id //brise
+
+:nesto - varijabla
+
+###MVC
+HTTP Request podaci
+(RathToRegExp)
+lumen mikroframework(lumen.laravel)
+
+###SSH
+konektovanje na neki udaljeni server
+potreban je kljuc, ip
+secure shell
